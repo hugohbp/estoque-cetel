@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="375.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.org.senai.view.CadastroDeComprasController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Cadastro de compras" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="15.0" layoutY="70.0" prefHeight="241.0" prefWidth="399.0" AnchorPane.leftAnchor="15.0">
+         <children>
+            <Label text="Valor total:" />
+            <Label text="Data da compra:" GridPane.rowIndex="1" />
+            <Label text="Centro de custo:" GridPane.rowIndex="5" />
+            <Label text="Quantidade:" GridPane.rowIndex="4" />
+            <TextField fx:id="tfNome" prefHeight="25.0" prefWidth="184.0" GridPane.columnIndex="1" />
+            <TextField fx:id="tfLogin" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <PasswordField fx:id="pfSenha" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="Produto:" GridPane.rowIndex="3" />
+            <ComboBox prefHeight="25.0" prefWidth="299.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ComboBox prefHeight="25.0" prefWidth="292.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="315.0" minWidth="10.0" prefWidth="111.0" />
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="448.0" minWidth="10.0" prefWidth="268.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <HBox layoutX="356.0" layoutY="330.0" prefHeight="25.0" prefWidth="230.0" spacing="20.0" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0">
+         <children>
+            <Button layoutX="211.0" layoutY="338.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" text="Salvar" />
+            <Button layoutX="215.0" layoutY="363.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" text="Cancelar" />
+         </children>
+      </HBox>
+      <Button layoutX="438.0" layoutY="215.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Button" />
+      <Button layoutX="438.0" layoutY="248.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Button" />
+   </children>
+</AnchorPane>

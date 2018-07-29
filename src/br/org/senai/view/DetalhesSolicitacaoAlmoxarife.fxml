@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.org.senai.view.DetalhesSolicitacaoAlmoxarifeController">
+   <children>
+      <Text layoutX="14.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instrutor:" />
+      <Text layoutX="14.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de necessidade:" />
+      <Label fx:id="lbRealizado" layoutX="423.0" layoutY="20.0" text="Label">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbInstrutor" layoutX="83.0" layoutY="28.0" text="Label" />
+      <Label fx:id="lbDataNecessidade" layoutX="146.0" layoutY="51.0" text="Label" />
+      <Text layoutX="14.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Itens">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableView" layoutX="11.0" layoutY="118.0" prefHeight="214.0" prefWidth="980.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+        <columns>
+          <TableColumn fx:id="tcProduto" prefWidth="75.0" text="Produto" />
+          <TableColumn fx:id="tcQuantidade" prefWidth="75.0" text="Quantidade" />
+            <TableColumn fx:id="tcDevolucao" prefWidth="75.0" text="Devolução" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button fx:id="btCancelar" layoutX="519.0" layoutY="361.0" mnemonicParsing="false" text="Cancelar" AnchorPane.rightAnchor="10.0" />
+      <Button fx:id="btAtualizar" layoutX="12.0" layoutY="361.0" mnemonicParsing="false" text="Atualizar" />
+      <Button fx:id="btConcluirSolicitacao" layoutX="85.0" layoutY="361.0" mnemonicParsing="false" text="Concluir solicitação" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="361.0" prefWidth="344.0" styleClass="fundoGradiente" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.org.senai.view.LoginController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="58.0" prefHeight="245.0" prefWidth="324.0" styleClass="loginBox" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="58.0">
+         <children>
+            <ImageView fitHeight="109.0" fitWidth="302.0" layoutX="28.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="10.0">
+               <image>
+                  <Image url="@../imagens/logo2.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="50.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preecha seus dados para entrar no sistema" />
+            <TextField fx:id="tfUsuario" layoutX="12.0" layoutY="114.0" prefHeight="25.0" prefWidth="302.0" promptText="usuário" />
+            <PasswordField fx:id="pfSenha" layoutX="12.0" layoutY="150.0" prefHeight="25.0" prefWidth="302.0" promptText="senha" />
+            <Button fx:id="btLogar" layoutX="235.0" layoutY="186.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Entrar" />
+            <Label fx:id="lbEsqueciASenha" layoutX="11.0" layoutY="221.0" text="Esqueci minha senha">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Label>
+         </children>
+      </AnchorPane>
+      <Text layoutX="67.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2015 © — Todos os direitos reservados" AnchorPane.bottomAnchor="10.0" />
+   </children>
+</AnchorPane>

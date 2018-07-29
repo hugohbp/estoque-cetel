@@ -1,0 +1,31 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.loginBox{
+    -fx-border-width: 2px;
+    -fx-border-color: #b1b1b1;
+    -fx-border-radius: 10;
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+}
+
+.fundoGradiente{
+    -fx-background-color: linear-gradient(to bottom, #cccccc, #ffffff);
+}
+
+.painelOpcoes {
+    -fx-background-color: rgb(113, 87, 62);
+
+}
+
+.fundoBranco{
+    -fx-background-color: white;
+}
+
+.split-pane{
+    -fx-border-width: 0;
+    -fx-border-style: none;
+    -fx-border-color: transparent;
+}
+

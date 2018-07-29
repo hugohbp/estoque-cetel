@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.org.senai.view.PerfilController">
+   <children>
+      <Text layoutX="16.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+      <Text layoutX="15.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:" />
+      <Text layoutX="266.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grupo:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+      <Text layoutX="17.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" />
+      <TextField fx:id="tfNome" layoutX="64.0" layoutY="117.0" prefHeight="25.0" prefWidth="242.0" />
+      <Text layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meu perfil" wrappingWidth="198.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="155.0" fitWidth="165.0" layoutX="376.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="lbLogin" layoutX="64.0" layoutY="57.0" prefHeight="17.0" prefWidth="176.0" text="Label" />
+      <Label fx:id="lbGrupo" layoutX="333.0" layoutY="57.0" text="Label" />
+      <TextField fx:id="tfEmail" layoutX="64.0" layoutY="162.0" prefHeight="25.0" prefWidth="242.0" />
+      <Text layoutX="18.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha atual:" />
+      <Text layoutX="18.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nova senha:" />
+      <Text layoutX="17.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alterar senha">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="ivFotoDoPerfil" fitHeight="229.0" fitWidth="256.0" layoutX="417.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="417.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Foto do perfil:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="btInserirFoto" layoutX="424.0" layoutY="306.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="121.0" text="Inserir" />
+      <Button fx:id="btRemoverFoto" layoutX="545.0" layoutY="306.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="121.0" text="Remover" />
+      <Button fx:id="btSalvar" layoutX="606.0" layoutY="361.0" mnemonicParsing="false" text="Salvar" />
+      <Button fx:id="btCancelar" layoutX="665.0" layoutY="361.0" mnemonicParsing="false" text="Cancelar" />
+      <Separator layoutX="18.0" layoutY="199.0" prefHeight="0.0" prefWidth="312.0" />
+      <Text layoutX="17.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Repita a senha:" />
+      <PasswordField fx:id="pfSenhaAtual" layoutX="122.0" layoutY="254.0" prefHeight="25.0" prefWidth="189.0" />
+      <PasswordField fx:id="pfNovaSenha" layoutX="122.0" layoutY="285.0" prefHeight="25.0" prefWidth="189.0" />
+      <PasswordField fx:id="pfRepitaASenha" layoutX="122.0" layoutY="319.0" prefHeight="25.0" prefWidth="189.0" />
+      <CheckBox fx:id="checkBoxAlterarSenha" layoutX="138.0" layoutY="215.0" mnemonicParsing="false" text="Ativar campos" />
+   </children>
+</AnchorPane>

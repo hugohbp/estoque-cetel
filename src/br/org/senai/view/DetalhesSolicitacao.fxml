@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="368.0" prefWidth="1000.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.org.senai.view.DetalhesSolicitacaoController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <Text layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Detalhes da solicitação">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Label fx:id="lbDataDeSolicitacao" layoutX="124.0" layoutY="47.0" text="Label" />
+      <Text layoutX="14.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data da solicitação:" />
+      <Text layoutX="14.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data da necessidade:" />
+      <Label fx:id="lbDataDeNecessidade" layoutX="138.0" layoutY="71.0" text="Label" />
+      <Separator layoutX="5.0" layoutY="111.0" prefHeight="0.0" prefWidth="577.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <Text layoutX="14.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Itens:" />
+      <TableView fx:id="tableView" layoutX="16.0" layoutY="149.0" prefHeight="164.0" prefWidth="552.0" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="149.0">
+        <columns>
+          <TableColumn fx:id="tcProduto" prefWidth="75.0" text="Produto" />
+          <TableColumn fx:id="tcQuantidadeSolicitada" prefWidth="75.0" text="Quantidade solicitada" />
+            <TableColumn fx:id="tcQuantidadeAprovada" prefWidth="75.0" text="Quantidade aprovada" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <HBox layoutX="16.0" layoutY="333.0" spacing="10.0" AnchorPane.bottomAnchor="10.0">
+         <children>
+            <Button fx:id="btAprovarSolicitacao" layoutX="16.0" layoutY="333.0" mnemonicParsing="false" text="Aprovar solicitação" />
+            <Button fx:id="btCancelarSolicitacao" layoutX="145.0" layoutY="333.0" mnemonicParsing="false" text="Cancelar solicitação" AnchorPane.bottomAnchor="10.0" />
+         </children>
+      </HBox>
+      <Button fx:id="btCancelar" layoutX="906.0" layoutY="434.0" mnemonicParsing="false" text="Cancelar" AnchorPane.bottomAnchor="10.0" />
+      <Label fx:id="lbStatus" layoutX="576.0" layoutY="54.0" text="Label">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="575.0" layoutY="30.0" text="Status:" />
+   </children>
+</AnchorPane>

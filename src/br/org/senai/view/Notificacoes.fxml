@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.org.senai.view.NotificacoesController">
+   <children>
+      <Text layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notificações">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="checkBox" layoutX="14.0" layoutY="62.0" mnemonicParsing="false" text="Exibir notificações" />
+      <Text layoutX="14.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exibir notificações a cada" />
+      <ComboBox fx:id="cbIntervalo" layoutX="159.0" layoutY="104.0" prefWidth="150.0" promptText="&lt;Selecione&gt;" />
+      <Button fx:id="btSalvar" layoutX="466.0" layoutY="344.0" mnemonicParsing="false" text="Salvar" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <Text layoutX="329.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="minutos." />
+   </children>
+</AnchorPane>

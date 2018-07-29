@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <mapping class="br.org.senai.entities.TipoDoCurso"/>
+    <mapping class="br.org.senai.entities.Compra"/>
+    <mapping class="br.org.senai.entities.Fornecedor"/>
+    <mapping class="br.org.senai.entities.ItensCompra"/>
+    <mapping class="br.org.senai.entities.ItensSolicitacao"/>
+    <mapping class="br.org.senai.entities.LocalDeArmazenamento"/>
+    <mapping class="br.org.senai.entities.Produto"/>
+    <mapping class="br.org.senai.entities.ProdutoEFornecedor"/>
+    <mapping class="br.org.senai.entities.Solicitacao"/>
+    <mapping class="br.org.senai.entities.Status"/>
+    <mapping class="br.org.senai.entities.Tag"/>
+    <mapping class="br.org.senai.entities.Usuario"/>
+    <mapping class="br.org.senai.entities.Marcacao"/>
+    <mapping class="br.org.senai.entities.Grupo"/>
+    <mapping class="br.org.senai.entities.TokenCode"/>
+  </session-factory>
+</hibernate-configuration>

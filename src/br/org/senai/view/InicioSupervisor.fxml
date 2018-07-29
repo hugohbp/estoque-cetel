@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="571.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.org.senai.view.InicioSupervisorController">
+   <children>
+      <TextArea fx:id="taNotificacao" layoutX="10.0" layoutY="46.0" prefHeight="95.0" prefWidth="423.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="46.0" />
+      <TableView fx:id="tableSolicitacoes" layoutX="10.0" layoutY="270.0" prefHeight="183.0" prefWidth="977.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+        <columns>
+          <TableColumn fx:id="tcDataSolicitacao" prefWidth="75.0" text="Data solicitação" />
+          <TableColumn fx:id="tcItens" prefWidth="75.0" text="Itens" />
+            <TableColumn fx:id="tcInstrutor" prefWidth="75.0" text="Instrutor" />
+            <TableColumn fx:id="tcSituacao" prefWidth="75.0" text="Situação" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TextArea fx:id="taBemVindo" layoutX="579.0" layoutY="44.0" prefHeight="100.0" prefWidth="407.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="44.0" />
+   </children>
+</AnchorPane>

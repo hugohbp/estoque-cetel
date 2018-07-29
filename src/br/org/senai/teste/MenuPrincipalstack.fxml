@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="509.0" prefWidth="1019.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.org.senai.view.MenuPrincipalController">
+    <children>
+        <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Arquivo">
+                    <items>
+                        <MenuItem fx:id="miSair" mnemonicParsing="false" text="Sair" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Ferramentas">
+                    <items>
+                        <MenuItem fx:id="miOpcoes" mnemonicParsing="false" text="Opções" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Ajuda">
+                    <items>
+                        <MenuItem fx:id="miSobre" mnemonicParsing="false" text="Sobre" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <ScrollPane fitToWidth="true" layoutY="25.0" prefViewportHeight="453.0" prefViewportWidth="897.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+            <content>
+                <StackPane fx:id="stackPane" prefHeight="482.0" prefWidth="1017.0">
+                   <children>
+                       <AnchorPane fx:id="painelPrincipal" layoutY="25.0" prefHeight="481.0" prefWidth="1017.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+                           <children>
+                               <Pane layoutX="10.0" layoutY="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                   <children>
+                                       <Separator layoutX="269.0" layoutY="3.0" orientation="VERTICAL" prefHeight="63.0" prefWidth="5.0" />
+                                       <Label layoutX="109.0" layoutY="27.0" text="Ver minhas notificações">
+                                           <cursor>
+                                               <Cursor fx:constant="HAND" />
+                                           </cursor>
+                                       </Label>
+                                       <HBox layoutX="301.0" prefHeight="68.0" prefWidth="584.0" spacing="5.0" AnchorPane.leftAnchor="268.0" AnchorPane.topAnchor="10.0">
+                                           <children>
+                                               <Button fx:id="btInicio" mnemonicParsing="false" text="Button" />
+                                               <Button fx:id="btCompra" mnemonicParsing="false" text="Button" />
+                                               <Button fx:id="btEstoque" mnemonicParsing="false" text="Button" />
+                                               <Button fx:id="btProdutos" mnemonicParsing="false" text="Button" />
+                                               <Button fx:id="btSolicitaItens" mnemonicParsing="false" text="Button" />
+                                               <Button fx:id="btSolicitacoes" mnemonicParsing="false" text="Button" />
+                                               <Button fx:id="btUsuario" mnemonicParsing="false" text="Button" />
+                                           </children>
+                                           <padding>
+                                               <Insets left="10.0" />
+                                           </padding>
+                                       </HBox>
+                                       <Label fx:id="lbUsuarioLogado" layoutX="106.0" layoutY="4.0" text="Label">
+                                           <cursor>
+                                               <Cursor fx:constant="HAND" />
+                                           </cursor>
+                                       </Label>
+                                       <ImageView fx:id="imgUsuario" fitHeight="68.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                                       <Label fx:id="lbSair" layoutX="109.0" layoutY="52.0" prefHeight="11.0" prefWidth="20.0" text="Sair">
+                                           <cursor>
+                                               <Cursor fx:constant="HAND" />
+                                           </cursor>
+                                       </Label>
+                                       <Label fx:id="lbNumeroDeNotificacoes" contentDisplay="TEXT_ONLY" layoutX="224.0" layoutY="11.0" text="0" />
+                                   </children>
+                               </Pane>
+                               <AnchorPane fx:id="painelConteudo" layoutY="92.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="96.0" />
+                           </children>
+                       </AnchorPane>
+                   </children>
+                </StackPane>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

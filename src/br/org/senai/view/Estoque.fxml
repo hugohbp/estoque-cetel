@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.org.senai.view.EstoqueController">
+   <children>
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="39.0" prefHeight="349.0" prefWidth="426.0">
+        <columns>
+          <TableColumn fx:id="tcProduto" prefWidth="75.0" text="Produto" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Pane fx:id="pane" layoutX="456.0" layoutY="14.0" prefHeight="380.0" prefWidth="359.0">
+         <children>
+            <ImageView fx:id="ivProduto" fitHeight="150.0" fitWidth="307.0" layoutX="14.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="lbNomeProduto" layoutX="16.0" layoutY="29.0" text="nome do produto">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Text layoutX="14.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantidade mínima:" />
+            <Text layoutX="18.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantidade:" />
+            <Button fx:id="btSalvarAlteracoes" layoutX="240.0" layoutY="341.0" mnemonicParsing="false" text="Salvar alterações" />
+            <TextField fx:id="tfQuantidadeMinima" layoutX="15.0" layoutY="257.0" prefHeight="25.0" prefWidth="212.0" />
+            <TextField fx:id="tfQuantidade" layoutX="18.0" layoutY="316.0" prefHeight="25.0" prefWidth="212.0" />
+            <Text layoutX="15.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Detalhes do produto">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Separator layoutX="450.0" layoutY="6.0" orientation="VERTICAL" prefHeight="388.0" prefWidth="0.0" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="10.0" />
+      <Text layoutX="14.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estoque">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

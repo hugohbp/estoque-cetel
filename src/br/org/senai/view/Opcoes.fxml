@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.org.senai.view.OpcoesController">
+   <top>
+      <HBox prefHeight="53.0" prefWidth="580.0" spacing="10.0" style="-fx-background-color: #2E8B57;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btMenuNotificacoes" mnemonicParsing="false" text="Notificações" />
+            <Button fx:id="btMenuStatus" mnemonicParsing="false" text="Status" />
+            <Button fx:id="btCentroDeCusto" mnemonicParsing="false" text="Centro de custo" />
+            <Button fx:id="btGrupo" mnemonicParsing="false" text="Grupo" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="10.0" />
+         </padding></HBox>
+   </top>
+   <bottom>
+      <HBox alignment="BOTTOM_RIGHT" prefHeight="43.0" prefWidth="600.0" spacing="20.0" BorderPane.alignment="BOTTOM_RIGHT">
+         <children>
+            <Button fx:id="btCancelar" mnemonicParsing="false" text="Cancelar" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane>

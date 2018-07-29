@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="407.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.org.senai.view.VerificacaoSolicitacaoController">
+   <children>
+      <Text layoutX="14.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data da solicitação:" />
+      <Text layoutX="14.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instrutor:" />
+      <Label fx:id="lbDataSolicitacao" layoutX="126.0" layoutY="26.0" prefHeight="14.0" prefWidth="88.0" text="Label" />
+      <Label fx:id="lbInstrutor" layoutX="126.0" layoutY="51.0" prefHeight="14.0" prefWidth="88.0" text="Label" />
+      <Text layoutX="14.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de necessidade:" />
+      <Label fx:id="lbDataDeNecessidade" layoutX="126.0" layoutY="71.0" text="Label" />
+      <Text layoutX="16.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Itens da solicitação">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableItens" layoutX="18.0" layoutY="141.0" prefHeight="143.0" prefWidth="590.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+        <columns>
+          <TableColumn fx:id="tcImageItem" prefWidth="53.0" />
+          <TableColumn fx:id="tcNomeItem" prefWidth="64.0" text="Nome" />
+            <TableColumn fx:id="tcQuantidadeEmEstoque" prefWidth="165.0" text="Quant. em estoque" />
+            <TableColumn fx:id="tcQuantidadeSolicitada" prefWidth="70.0" text="Quant. solicitada" />
+            <TableColumn fx:id="tcQuantidadeAprovada" prefWidth="75.0" text="Quant. aprovada" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button fx:id="btConfirmarSolicitacao" layoutX="16.0" layoutY="342.0" mnemonicParsing="false" text="Confirmar solicitação" />
+      <Text layoutX="15.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status da solicitação:" />
+      <ComboBox fx:id="cbStatus" layoutX="132.0" layoutY="301.0" prefHeight="22.0" prefWidth="164.0" />
+   </children>
+</AnchorPane>
